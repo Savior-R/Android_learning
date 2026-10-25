@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      应用主题：不带系统 ActionBar 的浅色主题。
+      标题栏改由 MainView 用代码自己画（紫色条 + 姓名学号），
+      这样界面 100% 由代码生成，同时避开 Android 15+ 强制 edge-to-edge
+      时系统 ActionBar 压住内容的问题。
+    -->
+    <style name="Theme.ReProject" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+    </style>
+</resources>

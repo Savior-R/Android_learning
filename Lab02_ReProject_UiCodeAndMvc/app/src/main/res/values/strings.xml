@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用标题 = 姓名 + 学号（提交要求①） -->
+    <string name="app_name">犹锐2024110544</string>
+
+    <!-- 区 1：代码动态添加 TextView -->
+    <string name="btn_add_textview">ADD TEXTVIEW</string>
+    <string name="new_textview_prefix">This is a new textView:</string>
+
+    <!-- 区 2：MVC 模式的 ProgramAdviser -->
+    <string name="zone2_label">新语言</string>
+    <string name="zone2_spinner_prompt">新语言</string>
+    <string name="btn_confirm">确定</string>
+
+    <!-- 模型层（Model）：语言咨询知识库文案 -->
+    <string name="model_lang_kotlin_title">Kotlin</string>
+    <string name="model_lang_kotlin_desc">Kotlin 是一种运行在 JVM 上的静态类型编程语言，2017 年被 Google 宣布为 Android 官方开发语言。语法简洁、空安全，是当前 Android 开发的首选语言。</string>
+
+    <string name="model_lang_java_title">Java</string>
+    <string name="model_lang_java_desc">Java 是 Android 最早的官方开发语言，生态成熟、资料丰富。大量存量 Android 项目仍以 Java 编写，学习它有助于读懂旧代码。</string>
+
+    <string name="model_lang_swift_title">Swift</string>
+    <string name="model_lang_swift_desc">Swift 是 Apple 推出的 iOS / macOS 开发语言，语法现代且性能优秀。若要与 iOS 项目跨平台协作，它是必要的技能之一。</string>
+
+    <string name="model_lang_dart_title">Dart</string>
+    <string name="model_lang_dart_desc">Dart 是 Flutter 框架使用的语言，一套代码可同时构建 Android 与 iOS 应用，适合快速开发跨平台 UI。</string>
+
+    <string name="model_lang_python_title">Python</string>
+    <string name="model_lang_python_desc">Python 不直接用于 Android 原生开发，但广泛用于数据分析、后端服务与自动化脚本，可以作为移动端后台服务的技术栈。</string>
+
+    <string name="model_lang_cpp_title">C++</string>
+    <string name="model_lang_cpp_desc">C++ 通过 Android NDK 参与高性能模块开发，如图形渲染、音视频处理与游戏引擎，适合对性能敏感的场景。</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 8.0 以下的圆形启动图标兜底（26+ 由 anydpi-v26 自适应图标接管） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 圆形底板 -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M54,54 m-48,0 a48,48 0 1,0 96,0 a48,48 0 1,0 -96,0 Z" />
+
+    <!-- 相机机身 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,42 L40,42 L45,35 L63,35 L68,42 L78,42 A6,6 0 0 1 84,48 L84,72 A6,6 0 0 1 78,78 L30,78 A6,6 0 0 1 24,72 L24,48 A6,6 0 0 1 30,42 Z" />
+
+    <!-- 镜头 -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M54,47 m-13,0 a13,13 0 1,0 26,0 a13,13 0 1,0 -26,0 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,47 m-8,0 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" />
+
+    <!-- 快门指示灯 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,47 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+</vector>

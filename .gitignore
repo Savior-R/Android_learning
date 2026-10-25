@@ -1,0 +1,8 @@
+# Gradle / IDE 构建产物
+.gradle/
+build/
+app/build/
+local.properties
+.idea/
+*.iml
+.DS_Store

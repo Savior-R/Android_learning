@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 应用标题 = 姓名 + 学号（提交要求①） ============ -->
+    <string name="app_name">犹锐2024110544</string>
+
+    <!-- ============ 学生信息（正向传参的内容） ============ -->
+    <string name="student_name">犹锐</string>
+    <string name="student_id">2024110544</string>
+    <string name="student_major">计算机科学与技术</string>
+    <string name="student_score">95</string>
+
+    <!-- ============ Intent 动作与 extra key（也放入资源，避免代码中直接出现字符串） ============ -->
+    <string name="action_image_capture" translatable="false">android.media.action.IMAGE_CAPTURE</string>
+    <string name="extra_key_name" translatable="false">extra_name</string>
+    <string name="extra_key_id" translatable="false">extra_student_id</string>
+    <string name="extra_key_major" translatable="false">extra_major</string>
+    <string name="extra_key_score" translatable="false">extra_score</string>
+    <string name="extra_key_result" translatable="false">extra_result</string>
+    <!-- 系统相机返回缩略图时使用的 Bundle key -->
+    <string name="extra_key_thumbnail" translatable="false">data</string>
+    <!-- StopWatch 在 onSaveInstanceState 中使用的 Bundle key -->
+    <string name="state_key_base_time" translatable="false">state_base_time</string>
+    <string name="state_key_accumulated" translatable="false">state_accumulated</string>
+    <string name="state_key_running" translatable="false">state_running</string>
+
+    <!-- ============ 通用 ============ -->
+    <string name="value_empty">-</string>
+
+    <!-- ============ MainActivity ============ -->
+    <string name="main_title">多 Activity 实验</string>
+    <string name="main_desc">犹锐 · 2024110544 · 计算机科学学院 5 班</string>
+    <string name="main_btn_param">① 正向传参 → 活动一</string>
+    <string name="main_btn_result">② 带回传结果 ← 活动二</string>
+    <string name="main_btn_camera">③ 隐式 Intent 拍照 → 活动三</string>
+    <string name="main_btn_stopwatch">④ StopWatch 计时 → 活动四</string>
+    <string name="main_result_label">活动二返回的结果：</string>
+    <string name="main_result_empty">（尚未收到活动二返回的数据）</string>
+    <string name="main_lifecycle_label">生命周期回调：</string>
+
+    <!-- ============ ParamActivity：正向传参 ============ -->
+    <string name="param_title">活动一 · 接收正向传递的参数</string>
+    <string name="param_label_name">姓名：</string>
+    <string name="param_label_id">学号：</string>
+    <string name="param_label_major">专业：</string>
+    <string name="param_label_score">成绩：</string>
+    <string name="param_tip">以上数据由 MainActivity 通过 Intent 的 putExtra() 传递，本页面通过 getIntent().getStringExtra() 取出。</string>
+    <string name="param_back">返回主界面</string>
+
+    <!-- ============ ResultActivity：回传结果 ============ -->
+    <string name="result_title">活动二 · 输入并回传结果</string>
+    <string name="result_input_hint">请输入要回传给 MainActivity 的内容…</string>
+    <string name="result_btn_send">确定并返回</string>
+    <string name="result_tip">通过 setResult() + finish() 把 EditText 中的内容回传给 MainActivity，MainActivity 在 onActivityResult() 中接收并显示。</string>
+    <string name="result_default_text">（默认回传内容）</string>
+
+    <!-- ============ CameraActivity：隐式 Intent 调相机 ============ -->
+    <string name="camera_title">活动三 · 隐式调用系统相机</string>
+    <string name="camera_btn_take_photo">拍照（隐式 Intent）</string>
+    <string name="camera_tip">使用 new Intent(android.media.action.IMAGE_CAPTURE) 发起隐式 Intent，由系统相机应用完成拍照，缩略图通过 onActivityResult 的 data extras 取回并显示。</string>
+    <string name="camera_not_found">未检测到可用的相机应用</string>
+    <string name="camera_permission_denied">未授予相机权限，无法拍照</string>
+    <string name="camera_no_photo">未获取到照片数据</string>
+    <string name="camera_photo_desc">拍摄结果将显示在下方</string>
+
+    <!-- ============ StopWatchActivity：计时器 ============ -->
+    <string name="stopwatch_title">活动四 · StopWatch 计时器</string>
+    <string name="stopwatch_btn_start">开始</string>
+    <string name="stopwatch_btn_pause">暂停</string>
+    <string name="stopwatch_btn_reset">复位</string>
+    <string name="stopwatch_tip">以 SystemClock.elapsedRealtime() 为基准计时，并在 onSaveInstanceState() 中保存已累计时长，因此旋转屏幕（横屏/竖屏）后计时可连续不中断。</string>
+    <string name="stopwatch_time_zero" translatable="false">00:00.00</string>
+
+</resources>

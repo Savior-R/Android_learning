@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ 应用标题 = 姓名 + 学号（提交要求①） ============ -->
+    <string name="app_name">犹锐2024110544</string>
+
+    <!-- ============ Student info (forward-passing payload) ============ -->
+    <string name="student_name">You Rui</string>
+    <string name="student_id">2024110544</string>
+    <string name="student_major">Computer Science and Technology</string>
+    <string name="student_score">95</string>
+
+    <!-- ============ Intent action & extra keys (kept in resources to avoid literals) ============ -->
+    <string name="action_image_capture" translatable="false">android.media.action.IMAGE_CAPTURE</string>
+    <string name="extra_key_name" translatable="false">extra_name</string>
+    <string name="extra_key_id" translatable="false">extra_student_id</string>
+    <string name="extra_key_major" translatable="false">extra_major</string>
+    <string name="extra_key_score" translatable="false">extra_score</string>
+    <string name="extra_key_result" translatable="false">extra_result</string>
+    <string name="extra_key_thumbnail" translatable="false">data</string>
+    <string name="state_key_base_time" translatable="false">state_base_time</string>
+    <string name="state_key_accumulated" translatable="false">state_accumulated</string>
+    <string name="state_key_running" translatable="false">state_running</string>
+
+    <!-- ============ Common ============ -->
+    <string name="value_empty">-</string>
+
+    <!-- ============ MainActivity ============ -->
+    <string name="main_title">Multi-Activity Lab</string>
+    <string name="main_desc">You Rui · 2024110544 · School of Computer Science, Class 5</string>
+    <string name="main_btn_param">① Forward data → Activity One</string>
+    <string name="main_btn_result">② Result back ← Activity Two</string>
+    <string name="main_btn_camera">③ Implicit Intent camera → Activity Three</string>
+    <string name="main_btn_stopwatch">④ StopWatch → Activity Four</string>
+    <string name="main_result_label">Result returned by Activity Two:</string>
+    <string name="main_result_empty">(no data received yet)</string>
+    <string name="main_lifecycle_label">Lifecycle callbacks: </string>
+
+    <!-- ============ ParamActivity ============ -->
+    <string name="param_title">Activity One · Receives forwarded data</string>
+    <string name="param_label_name">Name: </string>
+    <string name="param_label_id">Student ID: </string>
+    <string name="param_label_major">Major: </string>
+    <string name="param_label_score">Score: </string>
+    <string name="param_tip">The data above is passed by MainActivity via Intent.putExtra() and read here with getIntent().getStringExtra().</string>
+    <string name="param_back">Back to main</string>
+
+    <!-- ============ ResultActivity ============ -->
+    <string name="result_title">Activity Two · Input and return a result</string>
+    <string name="result_input_hint">Type something to send back to MainActivity…</string>
+    <string name="result_btn_send">Confirm and return</string>
+    <string name="result_tip">Uses setResult() + finish() to send the EditText content back; MainActivity receives it in onActivityResult().</string>
+    <string name="result_default_text">(default payload)</string>
+
+    <!-- ============ CameraActivity ============ -->
+    <string name="camera_title">Activity Three · Implicit camera call</string>
+    <string name="camera_btn_take_photo">Take photo (implicit Intent)</string>
+    <string name="camera_tip">Sends an implicit Intent with new Intent(android.media.action.IMAGE_CAPTURE); the system camera app takes the photo and the thumbnail is read back from the data extras in onActivityResult().</string>
+    <string name="camera_not_found">No camera app available on this device</string>
+    <string name="camera_permission_denied">Camera permission denied</string>
+    <string name="camera_no_photo">No photo data returned</string>
+    <string name="camera_photo_desc">The captured photo will be shown below</string>
+
+    <!-- ============ StopWatchActivity ============ -->
+    <string name="stopwatch_title">Activity Four · StopWatch</string>
+    <string name="stopwatch_btn_start">Start</string>
+    <string name="stopwatch_btn_pause">Pause</string>
+    <string name="stopwatch_btn_reset">Reset</string>
+    <string name="stopwatch_tip">Timing is based on SystemClock.elapsedRealtime() and the accumulated duration is saved in onSaveInstanceState(), so rotating the device keeps the stopwatch running continuously.</string>
+    <string name="stopwatch_time_zero" translatable="false">00:00.00</string>
+
+</resources>

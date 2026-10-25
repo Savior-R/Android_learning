@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题色：标题栏的紫色 -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+
+    <!-- 界面配色 -->
+    <color name="screen_bg">#FFFFFFFF</color>
+    <color name="title_text">#FFFFFFFF</color>
+    <color name="zone1_header_bg">#FFFFFFFF</color>
+    <color name="zone1_list_bg">#FF2CE0D2</color>
+    <color name="zone2_bg">#FF55E800</color>
+    <color name="text_primary">#FF212121</color>
+</resources>

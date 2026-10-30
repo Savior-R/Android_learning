@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="brand_primary">#FF2E5E8E</color>
+    <color name="brand_primary_dark">#FF1E3F60</color>
+    <color name="brand_accent">#FFE8A33D</color>
+
+    <color name="page_background">#FFF2F5F8</color>
+    <color name="card_surface">#FFFFFFFF</color>
+    <color name="text_primary">#FF1F2933</color>
+    <color name="text_secondary">#FF6B7785</color>
+    <color name="divider">#FFDDE3EA</color>
+
+    <!-- 牌面 -->
+    <color name="card_face_back">#FF2E5E8E</color>
+    <color name="card_face_front">#FFFFFFFF</color>
+    <color name="card_border">#FFB9C4D0</color>
+    <color name="card_text_red">#FFC62828</color>
+    <color name="card_text_black">#FF1F2933</color>
+    <color name="card_matched">#FF2E7D32</color>
+    <color name="card_chosen_border">#FFE8A33D</color>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    实验六主界面：一个 Fragment 容器 + 底部三个切换按钮
+      LinearLayout 竖向
+        ├ FrameLayout（weight=1）承载当前 Fragment
+        └ 底部导航：个人信息 / 两张牌游戏 / 三张牌游戏
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/spacing_xs"
+        android:paddingBottom="@dimen/spacing_xs">
+
+        <Button
+            android:id="@+id/btn_tab_hello"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/tab_hello"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_primary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_tab_game2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/tab_game2"
+            android:textAllCaps="false"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_tab_game3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/tab_game3"
+            android:textAllCaps="false"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

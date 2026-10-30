@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用标题 = 姓名 + 学号（提交要求①） -->
+    <string name="app_name">犹锐2024110544</string>
+
+    <!-- ========== 主界面（MainActivity） ========== -->
+    <string name="main_title_avatar">头像</string>
+    <string name="main_label_name">姓名：</string>
+    <string name="main_label_gender">性别：</string>
+    <string name="main_label_student_id">学号：</string>
+    <string name="main_label_phone">电话：</string>
+    <string name="main_label_email">邮件地址：</string>
+    <string name="main_label_hobbies">爱好：</string>
+    <string name="main_label_best_score">游戏最高分：</string>
+    <string name="main_btn_edit">修改个人信息</string>
+    <string name="main_btn_play">翻牌游戏</string>
+    <string name="main_best_score_value">%1$d</string>
+    <string name="main_unknown">—</string>
+
+    <!-- ========== 信息修改（EditInfoActivity） ========== -->
+    <string name="edit_title">信息修改</string>
+    <string name="edit_label_gender">性别：</string>
+    <string name="edit_label_name">姓名</string>
+    <string name="edit_label_student_id">学号</string>
+    <string name="edit_label_hobbies">爱好：</string>
+    <string name="edit_label_phone">电话号码</string>
+    <string name="edit_label_email">电子邮件地址</string>
+    <string name="edit_label_avatar">头像</string>
+    <string name="edit_gender_male">男</string>
+    <string name="edit_gender_female">女</string>
+    <string name="edit_hobby_reading">阅读</string>
+    <string name="edit_hobby_game">游戏</string>
+    <string name="edit_hobby_shopping">购物</string>
+    <string name="edit_btn_save">保存</string>
+    <string name="edit_btn_cancel">取消</string>
+    <string name="edit_hint_name">请输入姓名</string>
+    <string name="edit_hint_student_id">请输入学号</string>
+    <string name="edit_hint_phone">请输入电话号码</string>
+    <string name="edit_hint_email">请输入电子邮件地址</string>
+    <string name="edit_toast_saved">个人信息已更新</string>
+    <string name="edit_toast_cancelled">已取消修改</string>
+
+    <!-- ========== 翻牌游戏（CardGameActivity） ========== -->
+    <string name="game_title">翻牌游戏</string>
+    <string name="game_score_prefix">得分：</string>
+    <string name="game_score_format">得分：%1$d</string>
+    <string name="game_btn_reset">重置游戏</string>
+    <string name="game_btn_exit">退出</string>
+    <string name="game_card_hidden">?</string>
+    <string name="game_toast_matched">配对成功，得分 +%1$d</string>
+    <string name="game_toast_mismatch">配对失败，得分 −%1$d</string>
+    <string name="game_toast_all_cleared">全部配对完成！本局得分 %1$d</string>
+    <string name="game_toast_new_record">新纪录！最高分提升为 %1$d</string>
+
+    <!-- ========== 通用 ========== -->
+    <string name="cd_avatar">玩家头像</string>
+    <string name="cd_card_back">未翻开的牌</string>
+
+    <!-- ========== 实验五新增：菜单与关于对话框 ========== -->
+    <string name="menu_about">关于</string>
+    <string name="about_title">关于本应用</string>
+    <string name="about_version">版本 1.0（实验五 · RecyclerView 翻牌游戏）</string>
+    <string name="about_author">作者：犹锐</string>
+    <string name="about_student_id">学号：2024110544</string>
+    <string name="about_ok">确定</string>
+    <!-- %1$d 几张牌配对，%2$d 本局牌数 -->
+    <string name="about_message">%1$s\n\n%2$s\n%3$s\n%4$s\n包名：%5$s\n\n实验五：RecyclerView 翻牌游戏（三张牌配对，横竖屏不同牌数）</string>
+    <string name="game_mode_format">%1$d 张牌配对 · 本局 %2$d 张牌</string>
+
+    <!-- ========== 实验六新增：Fragment 与持久化 ========== -->
+    <string name="tab_hello">个人信息</string>
+    <string name="tab_game2">两张牌游戏</string>
+    <string name="tab_game3">三张牌游戏</string>
+    <string name="hello_title">个人信息</string>
+    <string name="hello_subtitle">修改后点保存，会序列化写入 player_info.obj</string>
+    <string name="hello_btn_save">保存到文件</string>
+    <string name="hello_toast_saved">个人信息已保存，重新打开应用会自动恢复</string>
+    <string name="hello_best_score_value">%1$d</string>
+    <string name="game2_title">两张牌翻牌游戏</string>
+    <string name="game3_title">三张牌翻牌游戏</string>
+    <string name="game_toast_restored">已从文件恢复上次的局面</string>
+</resources>

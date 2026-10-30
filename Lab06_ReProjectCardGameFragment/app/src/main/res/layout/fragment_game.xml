@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    翻牌游戏 Fragment 的布局：顶部信息栏 + RecyclerView 牌桌
+    与实验五的 Activity 版一致，只是把“退出”换成了 Fragment 切换（底部导航）
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_primary"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/spacing_l"
+        android:paddingTop="@dimen/spacing_m"
+        android:paddingEnd="@dimen/spacing_l"
+        android:paddingBottom="@dimen/spacing_m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_game_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/game2_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_button_secondary"
+                android:minWidth="0dp"
+                android:paddingStart="@dimen/spacing_m"
+                android:paddingEnd="@dimen/spacing_m"
+                android:text="@string/game_btn_reset"
+                android:textAllCaps="false"
+                android:textColor="@color/brand_primary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_game_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#CCFFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_score"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/board_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clipToPadding="false"
+            android:padding="@dimen/spacing_s"
+            android:scrollbars="none" />
+    </FrameLayout>
+</LinearLayout>

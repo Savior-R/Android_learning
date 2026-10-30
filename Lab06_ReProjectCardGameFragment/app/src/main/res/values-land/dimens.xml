@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 横屏时牌更矮，保证 4 行牌在有限高度内完整显示 -->
+<resources>
+    <dimen name="card_item_height">58dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    横屏：6 列 × 4 行 = 24 张牌（实验要求的 24 张牌游戏）
+    同一份代码，靠资源限定符实现“横屏竖屏不同牌数”
+-->
+<resources>
+    <integer name="card_count">24</integer>
+    <integer name="column_count">6</integer>
+    <integer name="cards_to_match">3</integer>
+</resources>

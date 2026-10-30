@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    竖屏：3 列 × 4 行 = 12 张牌
+    三张牌配对（cards_to_match = 3）
+-->
+<resources>
+    <integer name="card_count">12</integer>
+    <integer name="column_count">3</integer>
+    <integer name="cards_to_match">3</integer>
+</resources>

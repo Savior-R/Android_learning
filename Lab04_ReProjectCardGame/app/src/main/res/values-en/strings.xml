@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">You Rui 2024110544</string>
+
+    <string name="main_title_avatar">Avatar</string>
+    <string name="main_label_name">Name: </string>
+    <string name="main_label_gender">Gender: </string>
+    <string name="main_label_student_id">Student ID: </string>
+    <string name="main_label_phone">Phone: </string>
+    <string name="main_label_email">Email: </string>
+    <string name="main_label_hobbies">Hobbies: </string>
+    <string name="main_label_best_score">Best score: </string>
+    <string name="main_btn_edit">Edit profile</string>
+    <string name="main_btn_play">Card game</string>
+    <string name="main_best_score_value">%1$d</string>
+    <string name="main_unknown">—</string>
+
+    <string name="edit_title">Edit profile</string>
+    <string name="edit_label_gender">Gender:</string>
+    <string name="edit_label_name">Name</string>
+    <string name="edit_label_student_id">Student ID</string>
+    <string name="edit_label_hobbies">Hobbies:</string>
+    <string name="edit_label_phone">Phone number</string>
+    <string name="edit_label_email">Email address</string>
+    <string name="edit_label_avatar">Avatar</string>
+    <string name="edit_gender_male">Male</string>
+    <string name="edit_gender_female">Female</string>
+    <string name="edit_hobby_reading">Reading</string>
+    <string name="edit_hobby_game">Gaming</string>
+    <string name="edit_hobby_shopping">Shopping</string>
+    <string name="edit_btn_save">Save</string>
+    <string name="edit_btn_cancel">Cancel</string>
+    <string name="edit_hint_name">Enter your name</string>
+    <string name="edit_hint_student_id">Enter your student ID</string>
+    <string name="edit_hint_phone">Enter your phone number</string>
+    <string name="edit_hint_email">Enter your email address</string>
+    <string name="edit_toast_saved">Profile updated</string>
+    <string name="edit_toast_cancelled">Edit cancelled</string>
+
+    <string name="game_title">Card matching</string>
+    <string name="game_score_prefix">Score: </string>
+    <string name="game_score_format">Score: %1$d</string>
+    <string name="game_btn_reset">Restart</string>
+    <string name="game_btn_exit">Exit</string>
+    <string name="game_card_hidden">?</string>
+    <string name="game_toast_matched">Matched! +%1$d</string>
+    <string name="game_toast_mismatch">Not a match, −%1$d</string>
+    <string name="game_toast_all_cleared">All matched! Final score %1$d</string>
+    <string name="game_toast_new_record">New record! Best score %1$d</string>
+
+    <string name="cd_avatar">Player avatar</string>
+    <string name="cd_card_back">Face-down card</string>
+</resources>

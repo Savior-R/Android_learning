@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    单张牌（一局游戏里会被 inflate 多份）
+    未翻开：品牌蓝底 + "?"（通过 setBackground 在代码里切换）
+    已翻开：白底 + 花色点数，红桃/方块为红色，黑桃/梅花为黑色
+    已配对：绿色边框 + 半透明，且不再响应点击
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/card_face_back"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/tv_card_face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minHeight="64dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_card_rank"
+        android:textStyle="bold" />
+</LinearLayout>

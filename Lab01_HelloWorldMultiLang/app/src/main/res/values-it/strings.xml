@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Italiano：第三种语言 -->
+    <string name="app_name">You Rui 2024110544</string>
+    <string name="hello_world">Ciao, Mondo!</string>
+    <string name="language_name">Italiano</string>
+    <string name="hint_switch">Tocca una bandiera per cambiare lingua</string>
+</resources>

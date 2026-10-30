@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 应用图标前景：圆角方块底 + 屏幕窗口 + 多语言 Hello -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 手机屏幕外框 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,26 h40 a4,4 0 0 1 4,4 v48 a4,4 0 0 1 -4,4 h-40 a4,4 0 0 1 -4,-4 v-48 a4,4 0 0 1 4,-4 z" />
+    <!-- 屏幕内区 -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M34,34 h40 v40 h-40 z" />
+    <!-- 三条不同颜色的"多语言"文本行 -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M40,42 h28 v5 h-28 z" />
+    <path
+        android:fillColor="#43A047"
+        android:pathData="M40,51 h20 v5 h-20 z" />
+    <path
+        android:fillColor="#FB8C00"
+        android:pathData="M40,60 h24 v5 h-24 z" />
+</vector>

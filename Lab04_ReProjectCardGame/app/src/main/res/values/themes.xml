@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        实验指导中的补充说明：新版 Android Studio 默认主题是 Material3，
+        给 Button 设置 background 后不会生效。改为 MaterialComponents 的 Bridge 主题，
+        按钮背景才会按我们设置的 drawable 渲染。
+        这里同时使用 NoActionBar，因为三个界面都自带标题栏。
+    -->
+    <style name="Base.Theme.CardGame" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/brand_primary_dark</item>
+        <item name="android:windowBackground">@color/page_background</item>
+        <!-- Bridge 主题默认会覆盖 Button 背景，置空以保留布局中设置的 drawable -->
+        <item name="android:buttonStyle">@style/Widget.CardGame.Button</item>
+    </style>
+
+    <style name="Theme.CardGame" parent="Base.Theme.CardGame" />
+
+    <style name="Widget.CardGame.Button" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- 兼容旧清单引用名 -->
+    <style name="Theme.MyApplication" parent="Theme.CardGame" />
+
+</resources>

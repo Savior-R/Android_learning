@@ -17,6 +17,7 @@ Android 移动应用开发课程实验代码仓库。
 | `main` | 实验一 ~ 实验四 | 主分支，实验四的翻牌游戏应用（3 个 Activity） |
 | `Dev` | `main` + 实验五 | 实验五在 Dev 分支上完成（RecyclerView 翻牌游戏） |
 | `Frag` | `Dev` + 实验六 | 实验六在 Dev 分支上新建 Frag 分支完成（多 Fragment + 序列化存储） |
+| `main` | 实验一、二、三、四、七 | 实验七任务书未要求新建分支，按实验四的方式直接提交到 main |
 
 在远端仓库可以同时看到 `main`、`Dev`、`Frag` 三个分支，符合实验五「在 gitee 上能看到两个分支（Main 和 Dev）」与实验六「能看到三个分支（Main、Dev、Frag）」的要求。
 
@@ -30,6 +31,7 @@ Android 移动应用开发课程实验代码仓库。
 | 实验四 翻牌游戏应用 | [`Lab04_ReProjectCardGame/`](Lab04_ReProjectCardGame) | `cn.edu.sicnu.reproject.cardgame` | 犹锐2024110544 | 3 个 Activity、MVC 分层、CardMatchingGame 计分、GridLayout 4×4 牌桌、单元测试 21 例 |
 | 实验五 RecyclerView 翻牌游戏应用（Dev 分支） | [`Lab05_ReProjectCardGameRv/`](Lab05_ReProjectCardGameRv) | `cn.edu.sicnu.reproject.cardgame.rv` | 犹锐2024110544 | RecyclerView + Adapter、选项菜单与关于对话框、`reset()`、横竖屏 12 / 24 张牌、三张牌配对 |
 | 实验六 多 Fragment 应用（Frag 分支） | [`Lab06_ReProjectCardGameFragment/`](Lab06_ReProjectCardGameFragment) | `cn.edu.sicnu.reproject.cardgame.fragment` | 犹锐2024110544 | 3 个 Fragment、`Serializable` + `ObjectOutputStream` 持久化、重启可恢复牌局 |
+| 实验七 基于 Service 的音乐播放应用 | [`Lab07_ReProjectMusic/`](Lab07_ReProjectMusic) | `cn.edu.sicnu.reproject.music` | 犹锐2024110544 | ContentResolver 读媒体库、Service + Binder 播放控制、多线程刷新 SeekBar、Notification 显示歌名 |
 
 各工程的 `applicationId` 互不相同，因此多个 APK 可以同时安装在同一台设备上，不会互相覆盖。
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用标题 = 姓名 + 学号（提交要求①） -->
+    <string name="app_name">犹锐2024110544</string>
+
+    <!-- ========== 主界面 ========== -->
+    <string name="main_no_song">尚未选择歌曲</string>
+    <string name="main_no_songs">媒体库里没有找到音乐文件</string>
+    <string name="main_permission_denied">未获得读取音乐文件的权限，无法列出歌曲</string>
+    <string name="main_service_not_ready">播放服务正在连接，请稍候再试</string>
+    <string name="main_play_error">这首歌播放失败，已跳到下一首</string>
+
+    <!-- ========== 控制按钮（contentDescription） ========== -->
+    <string name="cd_prev">上一首</string>
+    <string name="cd_play_pause">播放或暂停</string>
+    <string name="cd_next">下一首</string>
+    <string name="cd_stop">停止</string>
+
+    <!-- ========== 通知栏 ========== -->
+    <string name="notification_channel_name">正在播放</string>
+    <string name="notification_channel_desc">显示当前正在播放的歌曲</string>
+    <string name="notification_playing">正在播放</string>
+</resources>

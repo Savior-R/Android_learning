@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 学号尾号 4 对应题目规则中的蓝色档，取 Material Blue 700 -->
+    <color name="text_primary">#1976D2</color>
+    <color name="bg">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+</resources>

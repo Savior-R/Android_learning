@@ -21,6 +21,8 @@ Android 移动应用开发课程实验代码仓库。
 
 在远端仓库可以同时看到 `main`、`Dev`、`Frag` 三个分支，符合实验五「在 gitee 上能看到两个分支（Main 和 Dev）」与实验六「能看到三个分支（Main、Dev、Frag）」的要求。
 
+2026-11-13 的上机测试未要求新建分支，按实验四、实验七的方式直接提交到 `main`。
+
 ## 各实验目录与包名
 
 | 实验 | 目录 | 包名（applicationId） | 应用标题 | 技术要点 |
@@ -32,6 +34,7 @@ Android 移动应用开发课程实验代码仓库。
 | 实验五 RecyclerView 翻牌游戏应用（Dev 分支） | [`Lab05_ReProjectCardGameRv/`](Lab05_ReProjectCardGameRv) | `cn.edu.sicnu.reproject.cardgame.rv` | 犹锐2024110544 | RecyclerView + Adapter、选项菜单与关于对话框、`reset()`、横竖屏 12 / 24 张牌、三张牌配对 |
 | 实验六 多 Fragment 应用（Frag 分支） | [`Lab06_ReProjectCardGameFragment/`](Lab06_ReProjectCardGameFragment) | `cn.edu.sicnu.reproject.cardgame.fragment` | 犹锐2024110544 | 3 个 Fragment、`Serializable` + `ObjectOutputStream` 持久化、重启可恢复牌局 |
 | 实验七 基于 Service 的音乐播放应用 | [`Lab07_ReProjectMusic/`](Lab07_ReProjectMusic) | `cn.edu.sicnu.reproject.music` | 犹锐2024110544 | ContentResolver 读媒体库、Service + Binder 播放控制、多线程刷新 SeekBar、Notification 显示歌名 |
+| 上机测试 书籍信息管理 APP | [`Test01_YouRuiProject_BookManager/`](Test01_YouRuiProject_BookManager) | `cn.edu.sicnu.YouRuiProject` | 犹锐2024110544 | 两个 Activity、8 本书按价格升序、ListView + BaseAdapter、Serializable 传参、全界面蓝色文字、5 项单元测试 |
 
 各工程的 `applicationId` 互不相同，因此多个 APK 可以同时安装在同一台设备上，不会互相覆盖。
 
@@ -56,6 +59,8 @@ cd Lab06_ReProjectCardGameFragment
 ## 包名约定
 
 任务书要求包名使用学院域名 `https://www.sicnu.edu.cn/` 的反域名：去掉 `www` 得到 `sicnu.edu.cn`，逐级反转得到 `cn.edu.sicnu`，再拼接 `ReProject`。后续实验在其后追加各自的段（`cardgame` / `cardgame.rv` / `cardgame.fragment`），既能看出实验之间的继承关系，又避免 `applicationId` 冲突。
+
+2026-11-13 上机测试按题目与本人要求改用 `YouRuiProject` 段，即 `cn.edu.sicnu.YouRuiProject`，与上机测试的工程名 `YouRuiBookManager` 对应。
 
 ## 环境说明
 
